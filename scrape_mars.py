@@ -110,7 +110,6 @@ def scrape_all():
         "news_title": news_title,
         "paragraph" : paragraph,
         "featured_image_url": featured_image_url,
-        "mars_weather": mars_weather,
         "html_table": facts_html,
         "hemisphere_img_urls": hemisphere_img_urls
     }

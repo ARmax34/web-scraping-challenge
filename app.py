@@ -21,9 +21,12 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_app")
 def index():
     info = mongo.db.mars_collection.find_one()
 
+    #alpha 7-1: data to be passed in
+    temp_data = {"foo":"bar"}
 
     #return from templates folder -> index file
-    return render_template("index.html", data_from_mars = info)
+    #alpha 7-2 data being passed
+    return render_template("index.html", data_from_mars = info,temp_data = temp_data)
 
 
     #Testing 
